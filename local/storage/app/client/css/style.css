@@ -189,7 +189,7 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
     .page-ribbon {
         height: 60px;
         line-height: 60px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -237,10 +237,10 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
 }
 
 #banner .facility {
-    width: 100%;
+    width: 70%;
     max-width: 440px;
     margin: auto;
-    background: url(facility.png) no-repeat center/contain;
+    background: url(../images/facility.png) no-repeat center/contain;
 }
 
 #banner .logo {
@@ -256,11 +256,11 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
 }
 
 #banner .logo .logo-white {
-    background: url(logo-white.png) no-repeat center/contain;
+    background: url(../images/logo-white.png) no-repeat center/contain;
 }
 
 #banner .logo .logo-vincity {
-    background: url(logo-vincity.png) no-repeat center/contain;
+    background: url(../images/logo-vincity.png) no-repeat center/contain;
 }
 
 #banner .logo .logo-white:after, #banner .logo .logo-vincity:after {
@@ -281,6 +281,37 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
     top: 76%;
     transform: translate(-50%, -50%);
     border: 2px solid var(--white);
+    cursor: pointer;
+}
+
+#banner .arrow {
+    position: absolute;
+    top: calc(76% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    -webkit-animation: mymove .8s linear infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove .8s linear infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {
+        top: calc(76% - 70px);
+    }
+    to {
+        top: calc(76% - 30px);
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {
+        top: calc(76% - 80px);
+    }
+    to {
+        top: calc(76% - 40px);
+    }
 }
 
 @media (max-width: 767px) {
@@ -425,6 +456,16 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
     z-index: 1;
 }
 
+@media (max-width: 1199px) {
+    #download input {
+        flex: 0 0 49%;
+    }
+
+    #download button {
+        flex: 0 0 49%;
+    }
+}
+
 @media (max-width: 767px) {
     #download .form-container {
         margin-bottom: 20px;
@@ -434,6 +475,11 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
 
     #download input {
         flex: 0 0 100%;
+    }
+
+    #download button {
+        width: 100%;
+        flex: unset;
     }
 }
 
@@ -562,6 +608,13 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
         padding-right: 0;
         padding-left: 0;
     }
+
+    #ground #groundCarousel .carousel-control-prev-icon, #ground #groundCarousel .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
 }
 
 /**
@@ -647,7 +700,7 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
-    background-image: url(hightlight.png);
+    background-image: url(../images/hightlight.png);
 }
 
 #highlight .left-side ul li:first-child:before {
@@ -688,7 +741,7 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
 }
 
 #advisory .image.man {
-    background: url(man.png) no-repeat center/contain;
+    background: url(../images/man.png) no-repeat center/contain;
     height: 100%;
     width: 100%;
 }
@@ -711,8 +764,13 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
 
 #foot .logo {
     height: 50px;
-    width: 200px;
-    background: url(logo.png) no-repeat center/contain;
+    width: 100%;
+    background: url(../images/logo.png) no-repeat left center/contain;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: var(--small-fs);
 }
 
 #foot ul li {

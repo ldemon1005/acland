@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AC LAND</title>
-
+    <link rel="icon" href="{{asset('local/storage/app/client/images/logo.png')}}" type="image/x-icon"/>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{{asset('local/storage/app/client/css/reset.css')}}">
@@ -29,7 +29,8 @@
             <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="banner" style="background-image:url({{asset('local/storage/app/client/images/banner1.png')}})"></div>
+                        <div class="banner"
+                             style="background-image:url({{asset('local/storage/app/client/images/banner1.png')}})"></div>
                     </div>
                 </div>
             </div>
@@ -43,6 +44,7 @@
                     <div class="facility mt-5"></div>
                 </div>
 
+                <div class="arrow"><i class="fas fa-arrow-down fa-2x"></i></div>
                 <a class="learn-more ac-btn">Tìm hiểu thêm</a>
             </div>
         </section>
@@ -82,9 +84,11 @@
                         </li>
                     </ul>
 
-                    <a class="ac-btn mb-3" href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}" target="_blank"><i class="fas fa-cloud-download-alt"></i> download brochure</a>
+                    <a class="ac-btn mb-3"
+                       href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}"><i
+                                class="fas fa-cloud-download-alt"></i> download brochure</a>
 
-                    <div class="head-1">Tư vấn: 091-234-5678</div>
+                    <div class="head-1">Tư vấn: 0936 - 479 - 585</div>
                 </div>
             </div>
 
@@ -103,42 +107,42 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility1.png') }});"></div>
                             <p>Biển nhân tạo</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility2.png') }});"></div>
                             <p>Trường liên cấp Vinschool</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility3.png') }});"></div>
                             <p>Khu ngắm cảnh</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility4.png') }});"></div>
                             <p>Bệnh viện quốc tế Vinmec</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility5.png') }});"></div>
                             <p>Vườn dạo bộ</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility6.png') }});"></div>
                             <p>Các dịch vụ Spa, Gym & Yoga</p>
                         </div>
                     </div>
@@ -153,7 +157,8 @@
             <div class="container">
                 <h5 class="white">Tải trọn bộ tài liệu & Nhận tư vấn chuyên sâu</h5>
                 <div class="form-container">
-                    <form id="form-1" class="d-flex flex-wrap" method="post" action="{{route('action_info')}}">
+                    <form id="form-1" class="d-flex flex-wrap justify-content-between" method="post"
+                          action="{{route('action_info')}}">
                         {{csrf_field()}}
                         <input required type="text" name="name" placeholder="Họ và tên">
                         <input required type="email" name="email" placeholder="Email">
@@ -161,7 +166,7 @@
                         <button class="ac-btn" onclick="submit_form_1()" type="button">tải xuống ngay</button>
                     </form>
                 </div>
-                <div class="note white">** Liên hệ hotline 091-234-5678 để được tư vấn ngay.</div>
+                <div class="note white">** Liên hệ hotline 0936 - 479 - 585 để được tư vấn ngay.</div>
             </div>
         </section>
 
@@ -195,8 +200,8 @@
                 </div>
                 <div class="right-side">
                     <div class="video-container">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qrO4YZeyl0I"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://drive.google.com/file/d/1vR5sja-DRw3wKprg-XaQsLkTFVD4tRLw/preview"
+                                width="100%" height="100%"></iframe>
                     </div>
                 </div>
             </div>
@@ -220,7 +225,8 @@
                         <div class="carousel-item active">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH01.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH01.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
@@ -242,11 +248,12 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH02.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH02.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
-                                        <div class="ground-head">Mặt bằng CH04</div>
+                                        <div class="ground-head">Mặt bằng CH02</div>
                                         <ul>
                                             <li><i class="fas fa-angle-double-right small mr-3"></i> Diện tích: 55,7 -
                                                 55,9 m2
@@ -265,11 +272,12 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH03.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH03.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
-                                        <div class="ground-head">Mặt bằng CH04</div>
+                                        <div class="ground-head">Mặt bằng CH03</div>
                                         <ul>
                                             <li><i class="fas fa-angle-double-right small mr-3"></i> Diện tích: 62 -
                                                 64,1 m2
@@ -288,7 +296,8 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH04.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH04.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
@@ -360,7 +369,8 @@
                                 <input class="block" required type="email" name="email" placeholder="Email">
                                 <input class="block" required type="text" name="phone" placeholder="Số điện thoại">
 
-                                <button onclick="submit_form_2()" class="ac-btn ac-btn-block ac-btn-blue mt-4" type="button">download bảng giá
+                                <button onclick="submit_form_2()" class="ac-btn ac-btn-block ac-btn-blue mt-4"
+                                        type="button">download bảng giá
                                 </button>
                                 <div class="note">(cập nhật ngày 28/09/2018)</div>
                             </form>
@@ -396,14 +406,16 @@
                                 <div class="col-12 col-md-6">
                                     <input required type="text" name="phone" placeholder="Số điện thoại"></div>
                                 <div class="col-12 col-md-6">
-                                    <button onclick="submit_form_3()" class="ac-btn ac-btn-block" type="button">nhận tư vấn ngay</button>
+                                    <button onclick="submit_form_3()" class="ac-btn ac-btn-block" type="button">nhận tư
+                                        vấn ngay
+                                    </button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page-ribbon">Tư vấn miễn phí 24/7: 091-234-5678</div>
+            <div class="page-ribbon">Tư vấn miễn phí 24/7: 0936 - 479 - 585</div>
         </section>
     </div>
 
@@ -412,11 +424,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-5">
-                        <div class="logo mb-4"></div>
+                        <div class="logo mb-4">
+                            <div class="uppercase white">công ty cổ phần bất động sản</div>
+                            <div class="head-1 mb-0 white">ac land</div>
+                        </div>
                         <ul>
                             <li>Địa chỉ: tầng 5 tòa Diamond Flower - số 1 Hoàng Đạo Thúy - Hà Nội</li>
-                            <li>Hotline: 091-234-5678</li>
-                            <li>Website: <a href="http://www.acland.com.vn">www.acland.com.vn</a></li>
+                            <li>Hotline: 0936 - 479 - 585</li>
+                            <li>Website: <a href="http://www.acland.vn">www.acland.vn</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4">
@@ -455,5 +470,13 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{asset('local/storage/app/client/js/jquery.validate.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('local/storage/app/client/js/custom.js')}}"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.learn-more').click(function () {
+            $('html,body').animate({scrollTop: $('#overview').offset().top});
+        });
+    });
+</script>
 </body>
 </html>
