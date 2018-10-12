@@ -85,7 +85,7 @@
                     </ul>
 
                     <a class="ac-btn mb-3"
-                       href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}"><i
+                       href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}" target="_blank"><i
                                 class="fas fa-cloud-download-alt"></i> download brochure</a>
 
                     <div class="head-1">Tư vấn: 0936 - 479 - 585</div>
