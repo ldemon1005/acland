@@ -29,7 +29,8 @@
             <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="banner" style="background-image:url({{asset('local/storage/app/client/images/banner1.png')}})"></div>
+                        <div class="banner"
+                             style="background-image:url({{asset('local/storage/app/client/images/banner1.png')}})"></div>
                     </div>
                 </div>
             </div>
@@ -43,6 +44,7 @@
                     <div class="facility mt-5"></div>
                 </div>
 
+                <div class="arrow"><i class="fas fa-arrow-down fa-2x"></i></div>
                 <a class="learn-more ac-btn">Tìm hiểu thêm</a>
             </div>
         </section>
@@ -84,7 +86,7 @@
 
                     <a class="ac-btn mb-3"><i class="fas fa-cloud-download-alt"></i> download brochure</a>
 
-                    <div class="head-1">Tư vấn: 091-234-5678</div>
+                    <div class="head-1">Tư vấn: 0936 - 479 - 585</div>
                 </div>
             </div>
 
@@ -153,14 +155,14 @@
             <div class="container">
                 <h5 class="white">Tải trọn bộ tài liệu & Nhận tư vấn chuyên sâu</h5>
                 <div class="form-container">
-                    <form class="d-flex flex-wrap" method="post" action="">
+                    <form class="d-flex flex-wrap justify-content-between" method="post" action="">
                         <input required type="text" name="name" placeholder="Họ và tên">
                         <input required type="email" name="email" placeholder="Email">
                         <input required type="text" name="phone" placeholder="Số điện thoại">
                         <button class="ac-btn" type="submit">tải xuống ngay</button>
                     </form>
                 </div>
-                <div class="note white">** Liên hệ hotline 091-234-5678 để được tư vấn ngay.</div>
+                <div class="note white">** Liên hệ hotline 0936 - 479 - 585 để được tư vấn ngay.</div>
             </div>
         </section>
 
@@ -194,7 +196,7 @@
                 </div>
                 <div class="right-side">
                     <div class="video-container">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qrO4YZeyl0I"
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/stqSz10ey9c"
                                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -219,7 +221,8 @@
                         <div class="carousel-item active">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH01.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH01.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
@@ -241,11 +244,12 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH02.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH02.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
-                                        <div class="ground-head">Mặt bằng CH04</div>
+                                        <div class="ground-head">Mặt bằng CH02</div>
                                         <ul>
                                             <li><i class="fas fa-angle-double-right small mr-3"></i> Diện tích: 55,7 -
                                                 55,9 m2
@@ -264,11 +268,12 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH03.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH03.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
-                                        <div class="ground-head">Mặt bằng CH04</div>
+                                        <div class="ground-head">Mặt bằng CH03</div>
                                         <ul>
                                             <li><i class="fas fa-angle-double-right small mr-3"></i> Diện tích: 62 -
                                                 64,1 m2
@@ -287,7 +292,8 @@
                         <div class="carousel-item">
                             <div class="row pt-60 pb-60">
                                 <div class="col-12 col-md-7 col-lg-7">
-                                    <div class="image" style="background-image: url({{asset('local/storage/app/client/images/CH04.png')}})"></div>
+                                    <div class="image"
+                                         style="background-image: url({{asset('local/storage/app/client/images/CH04.png')}})"></div>
                                 </div>
                                 <div class="col-12 col-md-5 col-lg-5">
                                     <div class="info-container">
@@ -400,7 +406,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page-ribbon">Tư vấn miễn phí 24/7: 091-234-5678</div>
+            <div class="page-ribbon">Tư vấn miễn phí 24/7: 0936 - 479 - 585</div>
         </section>
     </div>
 
@@ -409,11 +415,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-5">
-                        <div class="logo mb-4"></div>
+                        <div class="logo mb-4">
+                            <div class="uppercase white">công ty cổ phần bất động sản</div>
+                            <div class="head-1 mb-0 white">ac land</div>
+                        </div>
                         <ul>
                             <li>Địa chỉ: tầng 5 tòa Diamond Flower - số 1 Hoàng Đạo Thúy - Hà Nội</li>
-                            <li>Hotline: 091-234-5678</li>
-                            <li>Website: <a href="http://www.acland.com.vn">www.acland.com.vn</a></li>
+                            <li>Hotline: 0936 - 479 - 585</li>
+                            <li>Website: <a href="http://www.acland.vn">www.acland.vn</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4">
@@ -449,5 +458,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.learn-more').click(function () {
+            $('html,body').animate({scrollTop: $('#overview').offset().top});
+        });
+    });
+</script>
 </body>
 </html>
