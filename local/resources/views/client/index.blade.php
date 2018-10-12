@@ -82,7 +82,7 @@
                         </li>
                     </ul>
 
-                    <a class="ac-btn mb-3" href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}"><i class="fas fa-cloud-download-alt"></i> download brochure</a>
+                    <a class="ac-btn mb-3" href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}" target="_blank"><i class="fas fa-cloud-download-alt"></i> download brochure</a>
 
                     <div class="head-1">Tư vấn: 091-234-5678</div>
                 </div>
