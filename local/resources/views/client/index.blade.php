@@ -84,7 +84,9 @@
                         </li>
                     </ul>
 
-                    <a class="ac-btn mb-3" href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}"><i class="fas fa-cloud-download-alt"></i> download brochure</a>
+                    <a class="ac-btn mb-3"
+                       href="{{asset('local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf')}}"><i
+                                class="fas fa-cloud-download-alt"></i> download brochure</a>
 
                     <div class="head-1">Tư vấn: 0936 - 479 - 585</div>
                 </div>
@@ -105,42 +107,42 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility1.png') }});"></div>
                             <p>Biển nhân tạo</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility2.png') }});"></div>
                             <p>Trường liên cấp Vinschool</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility3.png') }});"></div>
                             <p>Khu ngắm cảnh</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility4.png') }});"></div>
                             <p>Bệnh viện quốc tế Vinmec</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility5.png') }});"></div>
                             <p>Vườn dạo bộ</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="item">
                             <div class="image"
-                                 style="background-image: url(https://vingroupvn.net/wp-content/uploads/2018/02/tong-quan-vincity-quan-9.jpg);"></div>
+                                 style="background-image: url({{ asset('local/storage/app/client/images/facility6.png') }});"></div>
                             <p>Các dịch vụ Spa, Gym & Yoga</p>
                         </div>
                     </div>
@@ -155,7 +157,8 @@
             <div class="container">
                 <h5 class="white">Tải trọn bộ tài liệu & Nhận tư vấn chuyên sâu</h5>
                 <div class="form-container">
-                    <form id="form-1" class="d-flex flex-wrap justify-content-between" method="post" action="{{route('action_info')}}">
+                    <form id="form-1" class="d-flex flex-wrap justify-content-between" method="post"
+                          action="{{route('action_info')}}">
                         {{csrf_field()}}
                         <input required type="text" name="name" placeholder="Họ và tên">
                         <input required type="email" name="email" placeholder="Email">
@@ -366,7 +369,8 @@
                                 <input class="block" required type="email" name="email" placeholder="Email">
                                 <input class="block" required type="text" name="phone" placeholder="Số điện thoại">
 
-                                <button onclick="submit_form_2()" class="ac-btn ac-btn-block ac-btn-blue mt-4" type="button">download bảng giá
+                                <button onclick="submit_form_2()" class="ac-btn ac-btn-block ac-btn-blue mt-4"
+                                        type="button">download bảng giá
                                 </button>
                                 <div class="note">(cập nhật ngày 28/09/2018)</div>
                             </form>
@@ -402,7 +406,9 @@
                                 <div class="col-12 col-md-6">
                                     <input required type="text" name="phone" placeholder="Số điện thoại"></div>
                                 <div class="col-12 col-md-6">
-                                    <button onclick="submit_form_3()" class="ac-btn ac-btn-block" type="button">nhận tư vấn ngay</button>
+                                    <button onclick="submit_form_3()" class="ac-btn ac-btn-block" type="button">nhận tư
+                                        vấn ngay
+                                    </button>
                                 </div>
                             </form>
                         </div>
