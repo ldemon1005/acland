@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AC LAND</title>
-    <link rel="icon" href="{{asset('local/storage/app/client/images/logo.png')}}" type="image/x-icon" />
+    <link rel="icon" href="{{asset('local/storage/app/client/images/logo.png')}}" type="image/x-icon"/>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{{asset('local/storage/app/client/css/reset.css')}}">
@@ -200,8 +200,8 @@
                 </div>
                 <div class="right-side">
                     <div class="video-container">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/stqSz10ey9c"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://drive.google.com/file/d/1vR5sja-DRw3wKprg-XaQsLkTFVD4tRLw/preview"
+                                width="100%" height="100%"></iframe>
                     </div>
                 </div>
             </div>
