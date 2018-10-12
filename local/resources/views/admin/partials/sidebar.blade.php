@@ -23,6 +23,13 @@
                 </li>
             @endif
 
+            <li class="@if (Request::segment(2) == 'customer-info') active @endif">
+                <a href="{{ route('customer_info') }}">
+                    <i class="fa fa-gear"></i> <span>Danh sách đăng ký</span>
+                    <span class="pull-right-container"></span>
+                </a>
+            </li>
+
             {{--<li class="@if (Request::segment(2) == 'config') active @endif">--}}
                 {{--<a href="{{ asset('admin/config') }}">--}}
                     {{--<i class="fa fa-gear"></i> <span>Cài đặt website</span>--}}

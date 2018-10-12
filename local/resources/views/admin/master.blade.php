@@ -39,5 +39,6 @@
         $('.errorAlert').fadeOut();
     }, 3900);
 </script>
+@yield('script')
 </body>
 </html>
