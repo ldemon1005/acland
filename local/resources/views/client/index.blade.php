@@ -155,11 +155,12 @@
             <div class="container">
                 <h5 class="white">Tải trọn bộ tài liệu & Nhận tư vấn chuyên sâu</h5>
                 <div class="form-container">
-                    <form class="d-flex flex-wrap justify-content-between" method="post" action="">
+                    <form id="form-1" class="d-flex flex-wrap justify-content-between" method="post" action="{{route('action_info')}}">
+                        {{csrf_field()}}
                         <input required type="text" name="name" placeholder="Họ và tên">
                         <input required type="email" name="email" placeholder="Email">
                         <input required type="text" name="phone" placeholder="Số điện thoại">
-                        <button class="ac-btn" type="submit">tải xuống ngay</button>
+                        <button class="ac-btn" onclick="submit_form_1()" type="button">tải xuống ngay</button>
                     </form>
                 </div>
                 <div class="note white">** Liên hệ hotline 0936 - 479 - 585 để được tư vấn ngay.</div>
@@ -359,12 +360,13 @@
                     </div>
                     <div class="right-side">
                         <div class="form-container">
-                            <form method="post" action="">
+                            <form id="form-2" method="post" action="{{route('action_info')}}">
+                                {{csrf_field()}}
                                 <input class="block" required type="text" name="name" placeholder="Họ và tên">
                                 <input class="block" required type="email" name="email" placeholder="Email">
                                 <input class="block" required type="text" name="phone" placeholder="Số điện thoại">
 
-                                <button class="ac-btn ac-btn-block ac-btn-blue mt-4" type="submit">download bảng giá
+                                <button onclick="submit_form_2()" class="ac-btn ac-btn-block ac-btn-blue mt-4" type="button">download bảng giá
                                 </button>
                                 <div class="note">(cập nhật ngày 28/09/2018)</div>
                             </form>
@@ -391,7 +393,8 @@
                                 nhất.</p>
                             <hr>
                             <p>Đăng ký để được tư vấn ngay:</p>
-                            <form class="row" method="post" action="">
+                            <form id="form-3" class="row" method="post" action="{{route('action_info')}}">
+                                {{csrf_field()}}
                                 <div class="col-12 col-md-6">
                                     <input required type="text" name="name" placeholder="Họ và tên"></div>
                                 <div class="col-12 col-md-6">
@@ -399,7 +402,7 @@
                                 <div class="col-12 col-md-6">
                                     <input required type="text" name="phone" placeholder="Số điện thoại"></div>
                                 <div class="col-12 col-md-6">
-                                    <button class="ac-btn ac-btn-block" type="submit">nhận tư vấn ngay</button>
+                                    <button onclick="submit_form_3()" class="ac-btn ac-btn-block" type="button">nhận tư vấn ngay</button>
                                 </div>
                             </form>
                         </div>
@@ -436,10 +439,11 @@
                     <div class="col-12 col-md-3 col-lg-3">
                         <h6 class="head-1 white">tham dự lễ mở bán</h6>
                         <div class="form-container">
-                            <form method="post" action="">
+                            <form id="form-4" method="post" action="{{route('action_info')}}">
+                                {{csrf_field()}}
                                 <input class="block" type="text" name="name" placeholder="Họ và tên">
                                 <input class="block" type="text" name="phone" placeholder="Điện thoại">
-                                <button class="ac-btn ac-btn-block mt-4">Đăng ký ngay</button>
+                                <button onclick="submit_form_4()" class="ac-btn ac-btn-block mt-4">Đăng ký ngay</button>
                             </form>
                         </div>
                     </div>
@@ -458,6 +462,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{asset('local/storage/app/client/js/jquery.validate.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('local/storage/app/client/js/custom.js')}}"></script>
 
 <script>
     $(document).ready(function () {

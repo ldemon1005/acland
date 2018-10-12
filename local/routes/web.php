@@ -30,6 +30,7 @@ Route::post('/notification', function (Illuminate\Http\Request $request) {
 
 Route::group(['namespace' => 'Client'],function (){
     Route::get('/','IndexController@index')->name('index');
+    Route::post('/action_info','IndexController@action_info')->name('action_info');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
@@ -59,6 +60,15 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
             Route::post('info', 'ConfigController@updateInfo');
             Route::post('term', 'ConfigController@updateTerm');
             Route::post('policy', 'ConfigController@updatePolicy');
+        });
+
+        Route::group(['prefix' => 'config','middleware' => 'CheckConfigPermission'], function () {
+            Route::get('/', 'ConfigController@index');
+        });
+
+        Route::group(['prefix' => 'customer-info','middleware' => 'CheckConfigPermission'], function () {
+            Route::get('/', 'InfoCustomerController@index')->name('customer_info');
+            Route::get('/update_status_info/{id}', 'InfoCustomerController@update_status')->name('update_status_info');
         });
 
         Route::group(['prefix' => 'website-info','middleware' => 'CheckConfigPermission'], function () {

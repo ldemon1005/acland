@@ -788,3 +788,7 @@ a.ac-btn.ac-btn-block, .ac-btn.ac-btn-block, a:not([href]):not([tabindex]).ac-bt
     color: var(--white);
     background-color: #4a4a4a;
 }
+
+.error {
+    border: 1px solid red !important;
+}
