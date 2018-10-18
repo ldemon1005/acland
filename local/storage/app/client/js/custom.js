@@ -144,27 +144,27 @@ $("#form-4").validate({
 function submit_form_1(){
     if($('#form-1').valid()) {
         $('#form-1').submit();
-        window.open(url + '/local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf');
+        window.open(url + '/local/storage/app/client/file/thu moi.pdf');
     }
 }
 
 function submit_form_2(){
     if($('#form-2').valid()) {
         $('#form-2').submit();
-        window.open(url + '/local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf');
+        window.open(url + '/local/storage/app/client/file/thu moi.pdf');
     }
 }
 
 function submit_form_3(){
     if($('#form-3').valid()) {
         $('#form-3').submit();
-        window.open(url + '/local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf');
+        window.open(url + '/local/storage/app/client/file/thu moi.pdf');
     }
 }
 
 function submit_form_4(){
     if($('#form-4').valid()) {
         $('#form-4').submit();
-        window.open(url + '/local/storage/app/client/file/thong bao cham luong thang 9.2018.pdf');
+        window.open(url + '/local/storage/app/client/file/thu moi.pdf');
     }
 }
